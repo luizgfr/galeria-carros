@@ -1,0 +1,7 @@
+body {
+    background-color: #f7f7f7;
+}
+.card-img-top {
+    max-height: 300px;
+    object-fit: cover;
+}
