@@ -16,6 +16,9 @@
                 <img src="{{ url_for('static', filename='uploads/' ~ img[2]) }}" class="card-img-top">
                 <div class="card-body">
                     <h5 class="card-title">{{ img[1] }}</h5>
+                    <a href="{{ url_for('edit', id=img[0]) }}" class="btn btn-warning btn-sm">Editar</a>
+                    <a href="{{ url_for('delete', id=img[0]) }}" class="btn btn-danger btn-sm"
+                       onclick="return confirm('Tem certeza que deseja excluir esta imagem?');">Excluir</a>
                 </div>
             </div>
         </div>
